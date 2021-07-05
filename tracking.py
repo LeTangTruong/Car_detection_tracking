@@ -4,8 +4,9 @@ import sys
 # Tao doi tuong tracking
 my_track_method = cv2.TrackerMOSSE_create()
 
+
 # Doc file video
-cap = cv2.VideoCapture("race.mp4")
+cap = cv2.VideoCapture("HL.mp4")
 
 # Doc frame dau tien de nguoi dung chon doi truong can track
 ret , frame = cap.read()
@@ -37,7 +38,7 @@ while True:
 
 
     # Hien thi thong tin va video
-    cv2.putText(frame, "MiAI Demo Object Tracking", (80, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2);
+    cv2.putText(frame, "Demo Object Tracking", (80, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2);
     cv2.imshow("Video", frame)
 
     # Nhan dien thao tac nhan phim
